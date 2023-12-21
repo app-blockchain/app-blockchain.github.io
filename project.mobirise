@@ -1,0 +1,144 @@
+{
+  "settings": {
+    "name": "Blockchain",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2.5,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.2,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.0",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/blockchain.webp",
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://app-blockchain.github.io/sitemap.xml\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://app-blockchain.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "2ubc7xmdqz",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.0"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "BlockChain™ | Home Official Site",
+        "meta_descr": "Confirm transactions, analyze the market, or simply learn more about crypto. Powerful Blockchain Data API. We’ve powered exchanges, data analysts, enthusiasts, and more.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image4\" group=\"Images & Videos\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://blockchain.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/blockchin.png\" alt=\"Blockchain\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tZ4f8bvrm2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "1.5rem"
+              },
+              "@media (min-width: 768px)": {
+                "padding": "2.25rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>BlockChain™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Shipping options</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Blockchain: Revolutionizing Industries and Empowering Decentralization\n<br></b>\n<br>Introduction:\n<br>\n<br><a href=\"https://app-blockchain.github.io/\" class=\"text-primary\"><b>Blockchain</b></a> technology has emerged as a transformative force, revolutionizing industries and reshaping the way we think about data, transactions, and trust. Initially introduced as the underlying technology behind Bitcoin, blockchain has evolved into a versatile and powerful tool with applications across various sectors. In this article, we delve into the intricacies of blockchain technology, exploring its key features, potential benefits, and the impact it has on different industries.\n<br>\n<br><b>Understanding Blockchain Technology:\n</b><br>a. The Basics: At its core, <a href=\"https://www.blockchain.com/wallet\" class=\"text-primary\"><b>blockchain</b></a> is a decentralized and immutable digital ledger that records transactions across multiple computers or nodes. Each transaction, or block, contains a timestamp, a cryptographic hash, and a reference to the previous block, creating a chain of interconnected blocks. This distributed ledger eliminates the need for intermediaries and central authorities, allowing for peer-to-peer transactions and fostering transparency and security.\n<br>\n<br>b. Decentralization and Consensus: One of the fundamental aspects of blockchain is its decentralized nature. Instead of relying on a central authority to validate transactions, blockchain networks employ a consensus mechanism. This mechanism ensures that all participating nodes agree on the validity of transactions and the state of the ledger. Popular consensus algorithms include Proof of Work (PoW), Proof of Stake (PoS), and Delegated Proof of Stake (DPoS), each with its own advantages and characteristics.\n<br>\n<br>Key Features and Advantages of Blockchain:\n<br>a. Security and Immutability: Blockchain technology provides robust security by utilizing cryptography and decentralization. Transactions recorded on the blockchain are immutable, meaning they cannot be altered or tampered with once confirmed. Furthermore, the distributed nature of blockchain ensures that data is stored across multiple nodes, making it highly resistant to single points of failure and attacks.\n<br>\n<br>b. Transparency and Auditability: Blockchain enhances transparency by allowing users to track and verify transactions in real-time. Every transaction recorded on the blockchain is visible to all participants, promoting trust and accountability. This level of transparency also enables efficient auditing processes, as auditors can easily access and verify transaction data without relying on intermediaries or extensive manual processes.\n<br>\n<br>c. Efficiency and Cost Reduction: Blockchain technology has the potential to significantly improve efficiency and reduce costs in various industries. By eliminating intermediaries and streamlining processes, blockchain-based systems can simplify complex workflows, accelerate transactions, and reduce associated costs. Additionally, the automation enabled by smart contracts, self-executing agreements coded on the blockchain, can further enhance efficiency by ensuring accurate and timely execution of contractual obligations.\n<br>\n<br>d. Enhanced Data Integrity: With blockchain, data integrity is ensured by the consensus mechanism and cryptographic techniques. Once a transaction is recorded on the blockchain, it becomes nearly impossible to alter or manipulate the data. This feature is particularly valuable in industries that heavily rely on accurate and tamper-proof records, such as supply chain management, healthcare, and financial services.\n<br>\n<br>e. Disintermediation and Trust: Blockchain technology enables peer-to-peer transactions without the need for intermediaries, reducing reliance on centralized authorities. This disintermediation fosters trust among participants, as transactions are validated and recorded by the network as a whole. Additionally, blockchain's transparent and auditable nature helps build trust between parties, as all participants can verify the authenticity and integrity of transactions.\n<br>\n<br>Impact of Blockchain Across Industries:\n<br>a. Financial Services: The financial industry has been at the forefront of blockchain adoption. Blockchain-based solutions such as cryptocurrencies, stablecoins, and decentralized finance (DeFi) platforms have transformed the way we transact, store value, and access financial services. Blockchain's ability to facilitate fast and secure cross-border transactions, reduce settlement times, and enhance transparency has the potential to reshape traditional banking and payment systems.\n<br>\n<br>b. Supply Chain Management: Blockchain technology is revolutionizing supply chain management by providing end-to-end visibility and traceability. By recording every transaction and movement of goods on the blockchain, stakeholders can track the origin, authenticity, and condition of products. This transparency helps reduce fraud, counterfeiting, and supply chain inefficiencies, ultimately benefiting consumers and improving overall trust in the supply chain.\n<br>\n<br>c. Healthcare: In the healthcare industry, blockchain is enabling secure and interoperable healthcare data exchange. By maintaining a decentralized and immutable record of patient health information, blockchain enhances data privacy, security, and consent management. Additionally, blockchain-based systems can streamline medical research, drug traceability, and insurance claim processing, leading to improved patient outcomes and reduced administrative costs.\n<br>\n<br>d. Real Estate: Blockchain technology has the potential to disrupt the real estate industry by simplifying property transactions, enhancing transparency, and reducing fraud. Blockchain-based land registries can provide a secure and tamper-proof record of property ownership, eliminating the need for intermediaries and lengthy legal processes. Smart contracts can automate property transfers and streamline rental agreements, revolutionizing the way real estate transactions are conducted.\n<br>\n<br>e. Government Services: Governments are exploring the potential of blockchain technology to improve public services and enhance administrative processes. Blockchain can facilitate secure and transparent voting systems, identity management, and public records management. By leveraging blockchain, governments can increase efficiency, reducebureaucracy, and enhance trust in public institutions.\n<br>\n<br>Conclusion:\n<br>\n<br>Blockchain technology has emerged as a groundbreaking innovation with the potential to transform industries and empower decentralization. Its key features, including security, transparency, efficiency, and disintermediation, offer numerous advantages across various sectors. As blockchain continues to evolve and mature, its impact on industries such as finance, supply chain management, healthcare, real estate, and government services is becoming increasingly evident. Embracing blockchain technology presents opportunities for increased efficiency, cost reduction, improved trust, and enhanced transparency. As organizations and industries recognize the potential of blockchain, we can expect to witness further innovation and adoption, driving us towards a decentralized and interconnected future.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tZ4f8TPwva",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
